@@ -1,0 +1,42 @@
+@import "compass/reset";
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+// colors
+$color-main: #F6D8B6;
+$color-main-text: #E57567;
+$color-main-darken: #FDC383;
+
+body {
+  background: $color-main;
+}
+
+main {
+  display: block;
+  width: 100%;
+  max-width: 1024px;
+  height: auto;
+  margin: 3rem auto;
+}
+
+.title--main {
+  font-size: 3.125rem;
+  line-height: 3.75rem;
+  color: $color-main-text
+}
+
+.text--main {
+  font-size: 2.125rem;
+  line-height: 2.75rem;
+  color: $color-main-darken;
+}
