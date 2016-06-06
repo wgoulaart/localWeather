@@ -77,7 +77,12 @@ body {
   line-height: 24px;
 }
 
-/* line 15, ../sass/main.scss */
+/* line 21, ../sass/main.scss */
+body {
+  background: #F6D8B6;
+}
+
+/* line 25, ../sass/main.scss */
 main {
   display: block;
   width: 100%;
@@ -86,16 +91,16 @@ main {
   margin: 3rem auto;
 }
 
-/* line 23, ../sass/main.scss */
+/* line 33, ../sass/main.scss */
 .title--main {
   font-size: 3.125rem;
   line-height: 3.75rem;
-  color: #2b2b2b;
+  color: #3A3C51;
 }
 
-/* line 29, ../sass/main.scss */
+/* line 39, ../sass/main.scss */
 .text--main {
   font-size: 2.125rem;
   line-height: 2.75rem;
-  color: #2b2b2b;
+  color: #f9f9f9;
 }

@@ -14,8 +14,9 @@ body {
 
 // colors
 $color-main: #F6D8B6;
-$color-main-text: #E57567;
-$color-main-darken: #FDC383;
+$color-main-text: #3A3C51;;
+$color-main-light: #FDC383;
+$color-grey: #f9f9f9;
 
 body {
   background: $color-main;
@@ -38,5 +39,5 @@ main {
 .text--main {
   font-size: 2.125rem;
   line-height: 2.75rem;
-  color: $color-main-darken;
+  color: $color-grey;
 }
