@@ -1,4 +1,4 @@
-let urlLocationIp = 'http://ip-api.com/json/'; // get location for ip
+let urlLocationIp = 'http://ip-api.com/json/';  // get location for ip
 let confs = {};
 let weatherLocation = document.querySelector('.weather-location');
 let weatherMeasure = document.querySelector('.measure');
