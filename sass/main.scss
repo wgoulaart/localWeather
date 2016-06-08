@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 html,
 body {
   font-size: 16px;
@@ -14,7 +18,7 @@ body {
 
 // colors
 $color-cold: #a2d3d0;
-$color-main: tint(#f8dec5,30);
+$color-main: tint(#f8dec5,50);
 $color-main-title: #e57567;
 $color-main-text: #3b3e4d;
 $color-main-light: #fdc383;
@@ -29,7 +33,6 @@ html {
 body {
   background: $color-main;
 }
-
 
 main {
   display: block;
@@ -77,10 +80,6 @@ p {
   margin-bottom: 1.5rem;
 }
 
-.weather-title {
-  font-size: 8rem;
-  line-height: 8.5rem;
-}
 
 .weather-location {
   display: block;
@@ -88,13 +87,50 @@ p {
   line-height: 3.5rem;
 }
 
-.weather-date {
-  font-size: 1.5rem;
-  line-height: 2rem;
-  text-transform: uppercase;
+.weather-title {
+  font-size: 6rem;
+  line-height: 6.5rem;
+  color: $color-main-light;
+  clear: both;
+  overflow: hidden;
 }
 
 .weather-type {
-  color: $color-main-light;
+  line-height: auto;
+  color: shade($color-main-light,10);
   cursor: pointer;
+}
+
+footer {
+  display: block;
+  color: $color-main-text;
+  font-size: 1rem;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    color: $color-main-text;
+    font-size: 1rem;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  .title--main {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  main {
+    padding: 0 1.5rem;
+    margin: 0 auto;
+  }
+
+  .weather-location {
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+  }
 }

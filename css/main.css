@@ -1,4 +1,3 @@
-/* line 5, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -17,103 +16,74 @@ time, mark, audio, video {
   border: 0;
   font: inherit;
   font-size: 100%;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
-/* line 22, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
-  line-height: 1;
-}
+  line-height: 1; }
 
-/* line 24, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
-  list-style: none;
-}
+  list-style: none; }
 
-/* line 26, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-}
+  border-spacing: 0; }
 
-/* line 28, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
-  vertical-align: middle;
-}
+  vertical-align: middle; }
 
-/* line 30, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
-  quotes: none;
-}
-/* line 103, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
 
-/* line 32, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
-  border: none;
-}
+  border: none; }
 
-/* line 116, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-  display: block;
-}
+  display: block; }
 
-/* line 3, ../sass/main.scss */
 *,
 *:before,
 *:after {
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
-/* line 9, ../sass/main.scss */
+html {
+  overflow-x: hidden; }
+
 html,
 body {
   font-size: 16px;
-  line-height: 24px;
-}
+  line-height: 24px; }
 
-/* line 23, ../sass/main.scss */
 body,
 html {
   font-family: 'Fira Sans','Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-  min-height: 100%;
-}
+  min-height: 100%; }
 
-/* line 29, ../sass/main.scss */
 body {
-  background: #fae8d6;
-}
+  background: #fcefe2; }
 
-/* line 34, ../sass/main.scss */
 main {
   display: block;
   width: 100%;
   max-width: 1024px;
   height: auto;
   margin: 3rem auto;
-  padding: 0 3rem;
-}
+  padding: 0 3rem; }
 
-/* line 43, ../sass/main.scss */
 h1 {
   font-size: 3rem;
   line-height: 3.5rem;
-  margin: 1.5rem 0;
-}
+  margin: 1.5rem 0; }
 
-/* line 49, ../sass/main.scss */
 p {
   font-size: 1.5rem;
   line-height: 2rem;
-  margin: 1.5rem 0;
-}
+  margin: 1.5rem 0; }
 
-/* line 55, ../sass/main.scss */
 .title--main {
   font-size: 4rem;
   line-height: 4.5rem;
@@ -121,48 +91,59 @@ p {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  letter-spacing: 0.325rem;
-}
+  letter-spacing: 0.325rem; }
 
-/* line 65, ../sass/main.scss */
 .text--main {
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 300;
-  color: #3b3e4d;
-}
+  color: #3b3e4d; }
 
-/* line 72, ../sass/main.scss */
 .weather-status {
   display: block;
   color: #e57567;
   text-align: center;
   font-weight: 700;
-  margin-bottom: 1.5rem;
-}
+  margin-bottom: 1.5rem; }
 
-/* line 80, ../sass/main.scss */
-.weather-title {
-  font-size: 8rem;
-  line-height: 8.5rem;
-}
-
-/* line 85, ../sass/main.scss */
 .weather-location {
   display: block;
   font-size: 3rem;
-  line-height: 3.5rem;
-}
+  line-height: 3.5rem; }
 
-/* line 91, ../sass/main.scss */
-.weather-date {
-  font-size: 1.5rem;
-  line-height: 2rem;
-  text-transform: uppercase;
-}
-
-/* line 97, ../sass/main.scss */
-.weather-type {
+.weather-title {
+  font-size: 6rem;
+  line-height: 6.5rem;
   color: #fdc383;
-  cursor: pointer;
-}
+  clear: both;
+  overflow: hidden; }
+
+.weather-type {
+  line-height: auto;
+  color: #e4b076;
+  cursor: pointer; }
+
+footer {
+  display: block;
+  color: #3b3e4d;
+  font-size: 1rem;
+  text-align: center; }
+  footer a {
+    text-decoration: none;
+    color: #3b3e4d;
+    font-size: 1rem; }
+    footer a:hover {
+      text-decoration: underline; }
+
+@media (max-width: 460px) {
+  .title--main {
+    font-size: 3rem;
+    line-height: 3rem; }
+
+  main {
+    padding: 0 1.5rem;
+    margin: 0 auto; }
+
+  .weather-location {
+    font-size: 1.75rem;
+    line-height: 2.5rem; } }
