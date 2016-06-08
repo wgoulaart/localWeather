@@ -14,6 +14,7 @@ function getLocation(data) {
     confs.posLong = data.lon;
     confs.city = data.city;
     confs.regionName = data.region;
+    confs.country = data.countryCode;
     confs.url = 'http://api.openweathermap.org/data/2.5/weather?lat=' + confs.posLat + '&lon=' + confs.posLong + '&appid=5fb4f48349670d743ffb765da99e7262&units=metric';
     getWeather(confs.url);
 }
@@ -46,7 +47,7 @@ function getWeather(url) {
 
 function getResult(weather) {
     weatherMeasure.innerHTML = weather.main.temp;
-    weatherLocation.innerHTML = weather.name + ' - ' + confs.regionName;
+    weatherLocation.innerHTML = weather.name + ' - ' + confs.regionName + ' / ' + confs.country;
     confs.celsius = weatherMeasure.innerHTML;
     confs.fahrenheit = convertToF(confs.celsius);
 }
